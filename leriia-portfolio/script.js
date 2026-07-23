@@ -1,1 +1,0 @@
-// Placeholder for future interactions (analytics, router, etc.)
