@@ -1,27 +1,26 @@
-# Landing (based on your Figma mock)
+# Leria portfolio — HTML/CSS
 
-Структура ровно как в макете:
-- Шапка: слева `leriia`, справа `Resume` и кнопка `Get in Touch`.
-- Hero: огромный H1 «Product Designer».
-- Плитки: ряд 1 — 2 карточки (About Me, Loomy с айфоном), ряд 2 — 3 карточки (All Projects, Resume, Skills).
-- Футер: кнопка Mail Me + email, справа иконки Instagram/LinkedIn.
+Static implementation of the supplied Figma prototype.
 
-## Где править контент
-- `index.html`: тексты, ссылки, email (поиском `your@email.com`).
-- `assets/iphone-top.png`: заглушка айфона (можно заменить своим PNG).
-- `assets/instagram.svg`, `assets/linkedin.svg`: иконки соцсетей.
+## Run
 
-## Быстрый деплой
-- **Netlify**: перетащите папку в Netlify Drop → получите URL.
-- **Vercel**: импортируйте как «Static files».
-- **GitHub Pages**: репозиторий → Settings → Pages.
+Open `index.html` directly in a browser. No installation or build step is
+required.
 
-## Встраивание в Notion (пиксель-точность)
-1. В Notion: Full width + Small text.
-2. Вставьте блок **Embed** со ссылкой на задеплоенный сайт.
-3. В Super.so/Potion (если используете) можно добавить CSS для iFrame:
-   ```css
-   .notion-embed iframe{ width:100%; min-height:100vh; border:0; }
-   .notion-embed{ padding:0 !important; }
-   .super-content{ max-width:1140px; padding-inline:24px; }
-   ```
+## Included
+
+- Semantic HTML
+- CSS variables
+- Desktop, tablet and mobile layouts
+- Minimal hover and focus states
+- Reduced-motion support
+- Three local project cover images
+
+## Before publishing
+
+1. Replace the placeholder `href="#"` values on project cards with real case
+   study links.
+2. Replace the LinkedIn URL with the final profile address.
+3. Confirm the email address in `index.html`.
+4. If the original videos are available, replace each `<img>` with a muted,
+   looping `<video>` while keeping the same `.project__link` container.
